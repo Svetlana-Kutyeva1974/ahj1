@@ -34,6 +34,9 @@ module.exports = {
       {
         test: /\.svg$/,
         type: 'asset/resource',
+        use: [
+          'svgo-loader',
+        ],
       },
     ],
   },
